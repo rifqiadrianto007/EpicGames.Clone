@@ -17,7 +17,7 @@
     padding: 20px 20px 20px 20px; 
 }
 
-.line-y {
+.line-y-1 {
     height: 30px; margin: 0 10px 0 10px;
     border-left: 1px solid #cdcccc;
 }
@@ -199,3 +199,43 @@
  }
 .fgc-body > * { margin-top: 5px; font-size: small; }
 .fgc-body p {color: #a1a1a1;}
+
+/* ================================================================================================================================== */
+
+.games-list-section { width: 100%; display: flex; justify-content: space-between;}
+
+.line-y-2 {
+    margin: 0; padding: 0;
+    background-color: rgb(91, 91, 91, 0.5); width: 1px;
+}
+
+.gls-container { width: 30%; display: flex; flex-direction: column; justify-content: space-between;}
+
+.glsc-header {display: flex; width: 100%; justify-content: space-between; align-items: center; }
+.glsc-header h5 {font-size: larger; font-weight: 400;}
+.glsc-header button {
+    background-color: rgb(32, 32, 32 ,0); border: 1px solid #cdcccc;
+    padding: 10px 20px 10px 20px; border-radius: 5px; color: white;
+    font-size: xx-small;
+}
+
+.glsc-body {display: flex; flex-direction: column;}
+
+
+.gls-card {width: 100%; display: flex; justify-content: space-between; 
+    margin: 10px 0 10px 0; align-items: center;
+}
+
+.glsc-left {width: 20%;}
+.glsc-left img { width: 100%; border-radius: 5px;}
+
+.glsc-right {
+    width: 75%; display: flex; flex-direction: column; justify-content: space-between;
+    height: auto;
+}
+.glsc-right > * {color: #cdcccc; margin: 5px 0 5px 0;}
+.glsc-right h6 { 
+    background-color: #202020; text-align: center; padding: 5px; 
+    font-size: xx-small; border-radius: 5px;
+}
+.glsc-right p {font-size: small;}
