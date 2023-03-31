@@ -144,7 +144,7 @@
 .cgos-body h4 { font-size: medium; }
 
 .cgos-footer {
-    display: flex; justify-content: space-between;
+    display: flex; justify-content: space-between; align-items: center;
     margin: 20px 0 20px 0;
 }
 
@@ -172,3 +172,30 @@
 .crg-body > * {margin-top: 15px;}
 .crg-body p { color: #cdcccc; font-size: small; line-height: 20px;}
 .crg-body h2 {margin-top: 30px; font-size: larger;}
+
+/* ================================================================================================================================== */
+
+.free-games { width: 100%; padding: 10px 30px 10px 30px; background-color: rgb(81, 81, 81, 0.5); }
+.free-games > * { margin: 20px 0 20px 0; }
+
+.fg-header { display: flex; justify-content: space-between; }
+.fg-header button {
+    background-color: rgb(32, 32, 32 ,0); border: 1px solid #cdcccc;
+    padding: 10px 20px 10px 20px; border-radius: 5px; color: white;
+}
+
+.fg-body { display: flex; justify-content: space-between;}
+.fg-card { width: 24%;}
+
+.fgc-header { 
+    position: relative; width: 100%; height: 350px; 
+    object-fit: cover; object-position: center;
+    }
+.fgc-header img { width: 100%; height: 100%; border-radius: 5px;}
+.fgc-header .label { 
+    position: absolute; bottom: 0; background-color: rgb(86, 86, 253); width: 100%;
+    text-align: center; font-size: small; font-weight: 600; padding: 5px;
+    border-radius: 0 0 5px 5px;
+ }
+.fgc-body > * { margin-top: 5px; font-size: small; }
+.fgc-body p {color: #a1a1a1;}
