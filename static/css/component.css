@@ -244,7 +244,7 @@
 
 .footer { background-color: #202020; padding: 50px 0 50px 0; font-size: small; }
 .footer ul {list-style-type: none;}
-.footer h5 {font-weight: 600; color: #a1a1a1; font-size: small;}
+.footer h5 {font-weight: 800; color: #7c7c7c; font-size: small;}
 
 .footer-content {
     margin: auto; width: 90%;
@@ -273,8 +273,8 @@
     margin: 20px 0;
 }
 
-.footer-section-4 { width: 50%; line-height: 20px; color: #cdcccc;}
+.footer-section-4 { width: 50%; line-height: 20px; color: #cdcccc; font-size: smaller;}
 
-.footer-section-5 { display: flex; justify-content: space-between; }
+.footer-section-5 { display: flex; justify-content: space-between; font-size: smaller; }
 .footer-section-5 ul {display: flex;}
 .footer-section-5 ul li {margin-right: 20px;}
