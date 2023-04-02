@@ -261,12 +261,12 @@
 .footer-section-2 {}
 .fs2-body { display: flex;}
 .fs2-body ul {margin-right: 20px;}
-.fs2-body ul li {margin: 10px 20px;}
+.fs2-body ul li {margin: 10px 20px 10px 0;}
 
 .footer-section-3 {}
 .fs3-body { display: flex;}
 .fs3-body ul {margin-right: 20px;}
-.fs3-body ul li {margin: 10px 20px;}
+.fs3-body ul li {margin: 10px 20px 10px 0;}
 
 .line-x {
     height: 1px; width: 100%; background-color: rgb(105, 105, 105);
