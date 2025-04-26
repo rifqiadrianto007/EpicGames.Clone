@@ -5,570 +5,513 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Epic Games Store | Download & Play</title>
+    <title>Epic Games Store | Download & Play PC Games</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="static/img/favicon.ico">
 
     <!-- CSS LINK -->
     <link rel="stylesheet" href="static/css/master.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
-
-    <!-- NAVBAR 1 -->
-    <section>
-        <div class="header">
-            <div>
-                <ul>
-                    <li>
-                        <img src="./static/img/logo-epic.svg" alt="logo">
-                    </li>
-                    <li>STORE</li>
-                    <li>DISTRIBUTION</li>
-                    <li>SUPPORT</li>
-                    <div class="line-y-1"></div>
-                    <li>UNREAL ENGINE</li>
-                </ul>
+    <!-- TOP NAVBAR -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="header-left">
+                <div class="logo">
+                    <img src="./static/img/logo-epic.svg" alt="Epic Games Logo">
+                </div>
+                <nav class="main-nav">
+                    <ul>
+                        <li class="nav-item active">STORE</li>
+                        <li class="nav-item">DISTRIBUTION</li>
+                        <li class="nav-item">SUPPORT</li>
+                        <div class="vertical-divider"></div>
+                        <li class="nav-item">UNREAL ENGINE</li>
+                    </ul>
+                </nav>
             </div>
-            <div>
+            <div class="header-right">
                 <ul>
-                    <li>
-                        <img src="./static/img/language.svg" alt="language">
+                    <li class="language-selector">
+                        <img src="./static/img/language.svg" alt="language selector">
                     </li>
-                    <li>SIGN IN</li>
-                    <li class="download">DOWNLOAD</li>
+                    <li class="sign-in">SIGN IN</li>
+                    <li class="download-button">DOWNLOAD</li>
                 </ul>
             </div>
         </div>
-    </section>
+    </header>
 
     <div class="content-container">
-
-        <!-- STICKY NAVBAR 1 -->
-        <section>
-            <div class="sticky">
-                <ul>
-                    <li><input type="text" placeholder="Search Store"></li>
-                    <li>Discover</li>
-                    <li>Browse</li>
-                    <li>News</li>
-                </ul>
+        <!-- STORE NAVBAR -->
+        <nav class="store-nav">
+            <div class="search-container">
+                <i class="fa fa-search search-icon"></i>
+                <input type="text" placeholder="Search Store">
             </div>
-        </section>
+            <ul class="store-menu">
+                <li class="active">Discover</li>
+                <li>Browse</li>
+                <li>News</li>
+                <li>Wishlist</li>
+                <li>Cart</li>
+            </ul>
+        </nav>
 
-        <!-- JUMBOTRON -->
-        <section>
-            <div class="jumbotron">
-                <div class="jumbotron-img">
-                    <img src="static/img/games_img/the_last_of_us_part_1.jpg" alt="">
-                    <div class="trans-background"></div>
-                    <div class="jumbotron-img-content">
-                        <h6>COMING MARCH 28</h6><br>
-                        <p>Crime Boss: Rockay City is an organized crime game combining first-person
-                            shooter action and turf wars, playable solo or with friends.</p><br>
-                        <h5>Starting at IDR 1,109,000.00</h5>
-                        <div class="jic-button">
-                            <button class="pre-purchase-now-btn">PRE PURCHASE NOW</button>
-                            <button class="add-to-wishlist-btn">ADD TO WISHLIST</button>
-                        </div>
+        <!-- HERO SECTION / JUMBOTRON -->
+        <section class="hero-section">
+            <div class="hero-main">
+                <img src="static/img/games_img/the_last_of_us_part_1.jpg" alt="The Last of Us Part 1">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="release-info">COMING MARCH 28</span>
+                    <h1>The Last of Us Part 1</h1>
+                    <p>Experience the emotional storytelling and unforgettable characters in The Last of Us,
+                        winner of over 200 Game of the Year awards.</p>
+                    <div class="price-info">
+                        <span>Starting at IDR 1,109,000.00</span>
+                    </div>
+                    <div class="hero-buttons">
+                        <button class="btn-primary">PRE-PURCHASE NOW</button>
+                        <button class="btn-secondary"><i class="fa fa-plus"></i> ADD TO WISHLIST</button>
                     </div>
                 </div>
-                <div class="jumbotron-content">
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/the_last_of_us_part_1-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">The Last Of Us Part 1</div>
-                    </div>
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/tchia-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">Tchia</div>
-                    </div>
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/cossack3-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">Cossack 3</div>
-                    </div>
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/dw8-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">Dynasty Warriors 8</div>
-                    </div>
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/fifa-19-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">Fifa 19</div>
-                    </div>
-                    <div class="jumbotron-content-detail">
-                        <div class="jcd-img">
-                            <img src="static/img/games_img/rdr2-potrait.jpg" alt="">
-                        </div>
-                        <div class="jcd-title">Red Dead Redemption 2</div>
-                    </div>
+            </div>
+            <div class="hero-thumbnails">
+                <div class="thumbnail active">
+                    <img src="static/img/games_img/the_last_of_us_part_1-potrait.jpg" alt="The Last Of Us Part 1">
+                    <div class="thumbnail-title">The Last Of Us Part 1</div>
+                </div>
+                <div class="thumbnail">
+                    <img src="static/img/games_img/tchia-potrait.jpg" alt="Tchia">
+                    <div class="thumbnail-title">Tchia</div>
+                </div>
+                <div class="thumbnail">
+                    <img src="static/img/games_img/cossack3-potrait.jpg" alt="Cossack 3">
+                    <div class="thumbnail-title">Cossack 3</div>
+                </div>
+                <div class="thumbnail">
+                    <img src="static/img/games_img/dw8-potrait.jpg" alt="Dynasty Warriors 8">
+                    <div class="thumbnail-title">Dynasty Warriors 8</div>
+                </div>
+                <div class="thumbnail">
+                    <img src="static/img/games_img/fifa-19-potrait.jpg" alt="FIFA 19">
+                    <div class="thumbnail-title">FIFA 19</div>
+                </div>
+                <div class="thumbnail">
+                    <img src="static/img/games_img/rdr2-potrait.jpg" alt="Red Dead Redemption 2">
+                    <div class="thumbnail-title">Red Dead Redemption 2</div>
                 </div>
             </div>
         </section>
 
         <!-- GAMES ON SALE -->
-        <section>
-            <div class="games-on-sale">
-                <div class="gos-header">
-                    <div>Games On Sale</div>
-                    <div>
-                        <ul>
-                            <li>
-                                << /li>
-                            <li>></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="gos-body">
-                    <!-- CONTENT -->
-                    <div class="card-games-on-sale">
-                        <div class="cgos-header"><img src="static/img/games_img/tchia-potrait.jpg" alt=""></div>
-                        <div class="cgos-body">
-                            <h6> BASE GAME</h6>
-                            <h4>Tchia</h4>
-                        </div>
-                        <div class="cgos-footer">
-                            <button>-55%</button>
-                            <div>
-                                <p class="price-1">IDR 360,000</p>
-                                <p class="price-2">IDR 162,000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-games-on-sale">
-                        <div class="cgos-header"><img src="static/img/games_img/fifa-19-potrait.jpg" alt=""></div>
-                        <div class="cgos-body">
-                            <h6> BASE GAME</h6>
-                            <h4>Fifa 19</h4>
-                        </div>
-                        <div class="cgos-footer">
-                            <button>-55%</button>
-                            <div>
-                                <p class="price-1">IDR 360,000</p>
-                                <p class="price-2">IDR 162,000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-games-on-sale">
-                        <div class="cgos-header"><img src="static/img/games_img/rdr2-potrait.jpg" alt=""></div>
-                        <div class="cgos-body">
-                            <h6> BASE GAME</h6>
-                            <h4>Red Dead Redemption 2</h4>
-                        </div>
-                        <div class="cgos-footer">
-                            <button>-55%</button>
-                            <div>
-                                <p class="price-1">IDR 360,000</p>
-                                <p class="price-2">IDR 162,000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-games-on-sale">
-                        <div class="cgos-header"><img src="static/img/games_img/cossack3-potrait.jpg" alt=""></div>
-                        <div class="cgos-body">
-                            <h6> BASE GAME</h6>
-                            <h4>Cossack 3</h4>
-                        </div>
-                        <div class="cgos-footer">
-                            <button>-55%</button>
-                            <div>
-                                <p class="price-1">IDR 360,000</p>
-                                <p class="price-2">IDR 162,000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="card-games-on-sale">
-                        <div class="cgos-header"><img src="static/img/games_img/dw8-potrait.jpg" alt=""></div>
-                        <div class="cgos-body">
-                            <h6> BASE GAME</h6>
-                            <h4>Dynasty Warrior 8 - Extreme Legends</h4>
-                        </div>
-                        <div class="cgos-footer">
-                            <button>-55%</button>
-                            <div>
-                                <p class="price-1">IDR 360,000</p>
-                                <p class="price-2">IDR 162,000</p>
-                            </div>
-                        </div>
-                    </div>
-
+        <section class="games-on-sale">
+            <div class="section-header">
+                <h2>Games On Sale</h2>
+                <div class="carousel-controls">
+                    <button class="carousel-control prev"><i class="fa fa-chevron-left"></i></button>
+                    <button class="carousel-control next"><i class="fa fa-chevron-right"></i></button>
                 </div>
             </div>
-
-        </section>
-
-        <br>
-
-        <!-- RECOMENDATION CONTENT -->
-        <section>
-            <div class="recomen-games-body">
-
-                <div class="card-recomen-games">
-                    <div class="crg-header">
-                        <img src="static/img/games_img/lego2kdrive.jpg" alt="">
+            <div class="game-cards-container">
+                <!-- Game Card 1 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="static/img/games_img/tchia-potrait.jpg" alt="Tchia">
                     </div>
-                    <div class="crg-body">
-                        <h5>Lego2kdrive</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid eius voluptatum cum.
-                            Aperiam quo sed id nam quod? Magni?</p>
-                        <h2>Wishlist Now</h2>
+                    <div class="game-info">
+                        <span class="game-tag">BASE GAME</span>
+                        <h3 class="game-title">Tchia</h3>
+                    </div>
+                    <div class="game-price">
+                        <span class="discount-badge">-55%</span>
+                        <div class="price-container">
+                            <span class="original-price">IDR 360,000</span>
+                            <span class="sale-price">IDR 162,000</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="card-recomen-games">
-                    <div class="crg-header">
-                        <img src="static/img/games_img/pubg.jpg" alt="">
+                <!-- Game Card 2 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="static/img/games_img/fifa-19-potrait.jpg" alt="FIFA 19">
                     </div>
-                    <div class="crg-body">
-                        <h5>Player Unknown Battleground</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid eius voluptatum cum.
-                            Aperiam quo sed id nam quod? Magni?</p>
-                        <h2>Wishlist Now</h2>
+                    <div class="game-info">
+                        <span class="game-tag">BASE GAME</span>
+                        <h3 class="game-title">FIFA 19</h3>
                     </div>
-                </div>
-
-                <div class="card-recomen-games">
-                    <div class="crg-header">
-                        <img src="static/img/games_img/valorant.jpg" alt="">
-                    </div>
-                    <div class="crg-body">
-                        <h5>Valorant</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi aliquid eius voluptatum cum.
-                            Aperiam quo sed id nam quod? Magni?</p>
-                        <h2>Wishlist Now</h2>
+                    <div class="game-price">
+                        <span class="discount-badge">-55%</span>
+                        <div class="price-container">
+                            <span class="original-price">IDR 360,000</span>
+                            <span class="sale-price">IDR 162,000</span>
+                        </div>
                     </div>
                 </div>
 
+                <!-- Game Card 3 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="static/img/games_img/rdr2-potrait.jpg" alt="Red Dead Redemption 2">
+                    </div>
+                    <div class="game-info">
+                        <span class="game-tag">BASE GAME</span>
+                        <h3 class="game-title">Red Dead Redemption 2</h3>
+                    </div>
+                    <div class="game-price">
+                        <span class="discount-badge">-55%</span>
+                        <div class="price-container">
+                            <span class="original-price">IDR 360,000</span>
+                            <span class="sale-price">IDR 162,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 4 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="static/img/games_img/cossack3-potrait.jpg" alt="Cossack 3">
+                    </div>
+                    <div class="game-info">
+                        <span class="game-tag">BASE GAME</span>
+                        <h3 class="game-title">Cossack 3</h3>
+                    </div>
+                    <div class="game-price">
+                        <span class="discount-badge">-55%</span>
+                        <div class="price-container">
+                            <span class="original-price">IDR 360,000</span>
+                            <span class="sale-price">IDR 162,000</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Game Card 5 -->
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="static/img/games_img/dw8-potrait.jpg" alt="Dynasty Warriors 8">
+                    </div>
+                    <div class="game-info">
+                        <span class="game-tag">BASE GAME</span>
+                        <h3 class="game-title">Dynasty Warriors 8</h3>
+                    </div>
+                    <div class="game-price">
+                        <span class="discount-badge">-55%</span>
+                        <div class="price-container">
+                            <span class="original-price">IDR 360,000</span>
+                            <span class="sale-price">IDR 162,000</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <br><br>
+        <!-- FEATURED GAMES -->
+        <section class="featured-games">
+            <div class="featured-cards">
+                <!-- Featured Game 1 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="static/img/games_img/lego2kdrive.jpg" alt="LEGO 2K Drive">
+                    </div>
+                    <div class="featured-content">
+                        <h3>LEGO 2K Drive</h3>
+                        <p>Build the drive of your dreams and race with friends through vibrant open worlds in LEGO 2K
+                            Drive, an
+                            AAA driving adventure game from 2K and Visual Concepts.</p>
+                        <a href="#" class="featured-link">Wishlist Now</a>
+                    </div>
+                </div>
+
+                <!-- Featured Game 2 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="static/img/games_img/pubg.jpg" alt="PUBG: BATTLEGROUNDS">
+                    </div>
+                    <div class="featured-content">
+                        <h3>PUBG: BATTLEGROUNDS</h3>
+                        <p>Land, loot, and outwit your opponents to become the last player left standing in the
+                            thrilling battle royale experience that took the world by storm.</p>
+                        <a href="#" class="featured-link">Play For Free</a>
+                    </div>
+                </div>
+
+                <!-- Featured Game 3 -->
+                <div class="featured-card">
+                    <div class="featured-image">
+                        <img src="static/img/games_img/valorant.jpg" alt="Valorant">
+                    </div>
+                    <div class="featured-content">
+                        <h3>Valorant</h3>
+                        <p>Blend your style and experience on a global, competitive stage. Tactical shooter meets
+                            hypernatural powers with precise gunplay and abilities.</p>
+                        <a href="#" class="featured-link">Play For Free</a>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- FREE GAMES -->
-        <section>
-            <div class="free-games">
-                <div class="fg-header">
-                    <h3>Free Games</h3>
-                    <button>VIEW MORE</button>
-                </div>
-                <div class="fg-body">
-
-                    <!-- CARD CONTENT -->
-                    <div class="fg-card">
-                        <div class="fgc-header">
-                            <img src="static/img/games_img/Cities-Skylines.jpg" alt="">
-                            <div class="label">FREE NOW</div>
-                        </div>
-                        <div class="fgc-body">
-                            <br>
-                            <h3>Cities Skylines</h3>
-                            <p>Free Now - Mar 30 at 10:00 PM</p>
-                        </div>
+        <section class="free-games-section">
+            <div class="section-header">
+                <h2>Free Games</h2>
+                <button class="btn-outline">VIEW MORE</button>
+            </div>
+            <div class="free-games-container">
+                <!-- Free Game 1 -->
+                <div class="free-game-card">
+                    <div class="free-game-image">
+                        <img src="static/img/games_img/Cities-Skylines.jpg" alt="Cities Skylines">
+                        <div class="free-game-badge">FREE NOW</div>
                     </div>
+                    <div class="free-game-info">
+                        <h3>Cities Skylines</h3>
+                        <p>Free Now - Mar 30 at 10:00 PM</p>
+                    </div>
+                </div>
 
-                    <!-- CARD CONTENT -->
-                    <div class="fg-card">
-                        <div class="fgc-header">
-                            <img src="static/img/games_img/gta-v-potrait.jpg" alt="">
-                            <div class="label">FREE NOW</div>
-                        </div>
-                        <div class="fgc-body">
-                            <br>
+                <!-- Free Game 2 -->
+                <div class="free-game-card">
+                    <div class="free-game-image">
+                        <img src="static/img/games_img/gta-v-potrait.jpg" alt="Grand Theft Auto V">
+                        <div class="free-game-badge">FREE NOW</div>
+                    </div>
+                    <div class="free-game-info">
+                        <h3>Grand Theft Auto V</h3>
+                        <p>Free Now - Mar 30 at 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Free Game 3 -->
+                <div class="free-game-card">
+                    <div class="free-game-image">
+                        <img src="static/img/games_img/far-cry-3-potrait.jpg" alt="Far Cry 3">
+                        <div class="free-game-badge">FREE NOW</div>
+                    </div>
+                    <div class="free-game-info">
+                        <h3>Far Cry 3</h3>
+                        <p>Free Now - Mar 30 at 10:00 PM</p>
+                    </div>
+                </div>
+
+                <!-- Free Game 4 -->
+                <div class="free-game-card">
+                    <div class="free-game-image">
+                        <img src="static/img/games_img/pes-2018.jpg" alt="Pro Evolution Soccer 2018">
+                        <div class="free-game-badge">FREE NOW</div>
+                    </div>
+                    <div class="free-game-info">
+                        <h3>Pro Evolution Soccer 2018</h3>
+                        <p>Free Now - Mar 30 at 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- GAMES LISTS SECTION -->
+        <section class="games-lists">
+            <div class="games-list">
+                <div class="list-header">
+                    <h2>New Releases</h2>
+                    <button class="btn-outline">VIEW MORE</button>
+                </div>
+                <div class="list-games">
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/gta-v-potrait.jpg" alt="Grand Theft Auto V">
+                        <div class="list-game-info">
                             <h3>Grand Theft Auto V</h3>
-                            <p>Free Now - Mar 30 at 10:00 PM</p>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
                         </div>
                     </div>
 
-                    <!-- CARD CONTENT -->
-                    <div class="fg-card">
-                        <div class="fgc-header">
-                            <img src="static/img/games_img/far-cry-3-potrait.jpg" alt="">
-                            <div class="label">FREE NOW</div>
-                        </div>
-                        <div class="fgc-body">
-                            <br>
-                            <h3>Far Cry 3</h3>
-                            <p>Free Now - Mar 30 at 10:00 PM</p>
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/pes-2018.jpg" alt="PES 2018">
+                        <div class="list-game-info">
+                            <h3>PES 2018</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
                         </div>
                     </div>
 
-                    <!-- CARD CONTENT -->
-                    <div class="fg-card">
-                        <div class="fgc-header">
-                            <img src="static/img/games_img/pes-2018.jpg" alt="">
-                            <div class="label">FREE NOW</div>
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/cossack3-potrait.jpg" alt="Cossack 3">
+                        <div class="list-game-info">
+                            <h3>Cossack 3</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
                         </div>
-                        <div class="fgc-body">
-                            <br>
-                            <h3>Pro Evolution Soccer 2018</h3>
-                            <p>Free Now - Mar 30 at 10:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="games-list">
+                <div class="list-header">
+                    <h2>Top Sellers</h2>
+                    <button class="btn-outline">VIEW MORE</button>
+                </div>
+                <div class="list-games">
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/tchia-potrait.jpg" alt="Tchia">
+                        <div class="list-game-info">
+                            <h3>Tchia</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
                         </div>
                     </div>
 
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/fifa-19-potrait.jpg" alt="FIFA 19">
+                        <div class="list-game-info">
+                            <h3>FIFA 19</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
+                        </div>
+                    </div>
+
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/rdr2-potrait.jpg" alt="Red Dead Redemption 2">
+                        <div class="list-game-info">
+                            <h3>Red Dead Redemption 2</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="vertical-divider"></div>
+
+            <div class="games-list">
+                <div class="list-header">
+                    <h2>Coming Soon</h2>
+                    <button class="btn-outline">VIEW MORE</button>
+                </div>
+                <div class="list-games">
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/dw8-potrait.jpg" alt="Dynasty Warriors 8">
+                        <div class="list-game-info">
+                            <h3>Dynasty Warriors 8</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
+                        </div>
+                    </div>
+
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/Cities-Skylines.jpg" alt="Cities Skylines">
+                        <div class="list-game-info">
+                            <h3>Cities Skylines</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
+                        </div>
+                    </div>
+
+                    <div class="list-game-item">
+                        <img src="static/img/games_img/the_last_of_us_part_1-potrait.jpg" alt="The Last of Us">
+                        <div class="list-game-info">
+                            <h3>The Last Of Us</h3>
+                            <span class="game-tag">NOW ON EPIC</span>
+                            <span class="list-price">IDR 20,999</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-
-        <br><br>
-
-        <!-- GAMES LIST SECTION -->
-        <section>
-            <div class="games-list-section">
-
-                <!-- LIST CONTAINER -->
-                <div class="gls-container">
-                    <div class="glsc-header">
-                        <h5>New Relesases</h5>
-                        <button>VIEW MORE</button>
-                    </div>
-                    <div class="glsc-body">
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/gta-v-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Grand Theft Auto 5</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/pes-2018.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>PES 2018</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/cossack3-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Cossack 3</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="line-y-2"></div>
-
-                <!-- LIST CONTAINER -->
-                <div class="gls-container">
-                    <div class="glsc-header">
-                        <h5>New Relesases</h5>
-                        <button>VIEW MORE</button>
-                    </div>
-                    <div class="glsc-body">
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/tchia-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Tchia</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/fifa-19-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>FIFA 19</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/rdr2-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Red Dead Redemption 2</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="line-y-2"></div>
-
-                <!-- LIST CONTAINER -->
-                <div class="gls-container">
-                    <div class="glsc-header">
-                        <h5>New Relesases</h5>
-                        <button>VIEW MORE</button>
-                    </div>
-                    <div class="glsc-body">
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/dw8-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Dynasty Warrior 8</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/Cities-Skylines.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>Cities Skylines</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                        <!-- GAMES CARD -->
-                        <div class="gls-card">
-                            <div class="glsc-left">
-                                <img src="static/img/games_img/the_last_of_us_part_1-potrait.jpg" alt="">
-                            </div>
-                            <div class="glsc-right">
-                                <h5>The Last Of Us</h5>
-                                <h6>NOW ON EPIC</h6>
-                                <p>IDR 20,999</p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
+    </div>
 
     <!-- FOOTER -->
-    <section>
-        <div class="footer">
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+                <button class="btn-back-to-top"><i class="fa fa-chevron-up"></i> UP</button>
+            </div>
+
             <div class="footer-content">
-
-                <div class="footer-section-1">
+                <div class="footer-section">
+                    <h4>Resources</h4>
                     <ul>
-                        <li>Facebook</li>
-                        <li>Twitter</li>
-                        <li>Youtube</li>
-                    </ul>
-                    <ul>
-                        <li><button>UP</button></li>
+                        <li><a href="#">Support-A-Creator</a></li>
+                        <li><a href="#">Distribute on Epic Games</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Company</a></li>
                     </ul>
                 </div>
 
-                <br>
-
-                <div class="footer-section-2">
-                    <h5>Resources</h5>
-                    <div class="fs2-body">
-                        <ul>
-                            <li>Support-A-Creator</li>
-                            <li>Distribute on Epic Games</li>
-                            <li>Careers</li>
-                            <li>Company</li>
-                        </ul>
-                        <ul>
-                            <li>Fan Art Policy</li>
-                            <li>UX Research</li>
-                            <li>Store EULA</li>
-                        </ul>
-                        <ul>
-                            <li>Online Service</li>
-                            <li>Community Rules</li>
-                            <li>Epic Newsroom</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <br>
-
-                <div class="footer-section-3">
-                    <h5>Made By Epic Games</h5>
-                    <div class="fs3-body">
-                        <ul>
-                            <li>Battle Breakers</li>
-                            <li>Fornite</li>
-                            <li>Infinity Blade</li>
-                        </ul>
-                        <ul>
-                            <li>Robo Recall</li>
-                            <li>Shadow Complex</li>
-                            <li>Unreal Tournament</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="line-x"></div>
-
-                <br>
-
-                <div class="footer-section-4">
-                    <p>© 2023, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite,
-                        the Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the
-                        Unreal Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United
-                        States of America and elsewhere. Other brands or product names are the trademarks of their
-                        respective owners. </p>
-                </div>
-
-                <br><br><br>
-
-                <div class="footer-section-5">
+                <div class="footer-section">
+                    <h4>Epic Games</h4>
                     <ul>
-                        <li>Terms Of Service</li>
-                        <li>Privacy Policy</li>
-                        <li>Store Refund Policy</li>
-                    </ul>
-                    <ul>
-                        <li>Epic Logo</li>
-                        <li>Unreal Logo</li>
+                        <li><a href="#">Fan Art Policy</a></li>
+                        <li><a href="#">UX Research</a></li>
+                        <li><a href="#">Store EULA</a></li>
                     </ul>
                 </div>
 
+                <div class="footer-section">
+                    <h4>Community</h4>
+                    <ul>
+                        <li><a href="#">Online Services</a></li>
+                        <li><a href="#">Community Rules</a></li>
+                        <li><a href="#">Epic Newsroom</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Made By Epic Games</h4>
+                    <ul>
+                        <li><a href="#">Battle Breakers</a></li>
+                        <li><a href="#">Fortnite</a></li>
+                        <li><a href="#">Infinity Blade</a></li>
+                        <li><a href="#">Robo Recall</a></li>
+                        <li><a href="#">Shadow Complex</a></li>
+                        <li><a href="#">Unreal Tournament</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal-divider"></div>
+
+            <div class="copyright">
+                <p>© 2023, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the
+                    Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal
+                    Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of
+                    America and elsewhere. Other brands or product names are the trademarks of their respective owners.
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Store Refund Policy</a>
+                </div>
+                <div class="footer-logos">
+                    <a href="#"><img src="./static/img/logo-epic.svg" alt="Epic Logo"></a>
+                    <a href="#"><img src="./static/img/unreal-logo.svg" alt="Unreal Logo"></a>
+                </div>
             </div>
         </div>
-    </section>
+    </footer>
 
-
+    <!-- JavaScript -->
+    <script src="static/js/main.js"></script>
 </body>
 
 </html>
