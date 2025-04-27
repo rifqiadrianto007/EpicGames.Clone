@@ -25,3 +25,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Mendapatkan tombol "Back to Top"
+    const backToTopButton = document.querySelector('.btn-back-to-top');
+    
+    // Menambahkan event listener untuk klik pada tombol
+    backToTopButton.addEventListener('click', function() {
+        // Menggulir ke bagian paling atas halaman dengan efek smooth
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
