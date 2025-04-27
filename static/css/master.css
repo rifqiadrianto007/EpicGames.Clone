@@ -467,7 +467,7 @@ img {
 .game-cards-container {
     display: flex;
     gap: 20px;
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     padding-bottom: 15px;
 }
