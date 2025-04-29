@@ -84,17 +84,20 @@ section {
 .hero {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Ubah menjadi row untuk layout horizontal */
     align-items: center;
     justify-content: space-between;
     border-radius: 0.5rem;
     overflow: hidden;
     background: linear-gradient(90deg, #00003B 0%, #1B0E4B 100%);
+    padding: 2rem;
+    min-height: 400px; /* Tetapkan tinggi minimum */
 }
 
 .hero-image {
-    width: 100%;
+    width: 50%; /* Kurangi ukuran gambar menjadi setengah container */
     object-fit: contain;
+    max-height: 100%;
 }
 
 .hero-content {
@@ -103,35 +106,39 @@ section {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 2rem 4rem;
+    padding: 2rem;
     gap: 1.5rem;
+    width: 50%; /* Alokasikan setengah ruang untuk konten */
+    justify-content: center; /* Posisikan konten di tengah secara vertikal */
 }
 
 .epic-logo {
-    margin-bottom: 0.5rem;
-    height: 5rem;
-    width: 5rem;
+    margin-bottom: 1rem;
+    height: 6rem; /* Perbesar logo */
+    width: 6rem;
 }
 
 .hero h1 {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Perbesar ukuran teks */
     font-weight: 800;
     line-height: 1.2;
-    max-width: 20rem;
+    max-width: 30rem; /* Perlebar max-width */
+    margin-bottom: 1rem;
 }
 
 .cta-button {
     background-color: white;
     color: black;
     font-weight: bold;
-    font-size: 0.75rem;
+    font-size: 1rem; /* Perbesar ukuran font */
     text-transform: uppercase;
     border-radius: 0.375rem;
-    padding: 0.75rem 2rem;
+    padding: 0.75rem 2.5rem; /* Perbesar padding */
     letter-spacing: 0.1em;
     border: none;
     cursor: pointer;
     transition: background-color 0.2s;
+    margin: 1rem 0;
 }
 
 .cta-button:hover {
@@ -139,21 +146,46 @@ section {
 }
 
 .hero-description {
-    font-size: 0.75rem;
-    max-width: 20rem;
+    font-size: 1rem; /* Perbesar ukuran font */
+    max-width: 30rem; /* Perlebar max-width */
+    margin-top: 0.5rem;
 }
 
 .badge {
     position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 0.5625rem;
+    top: 2rem;
+    right: -1.5rem; /* Sesuaikan posisi */
+    padding: 0.5rem 3rem; /* Tambahkan padding untuk badge */
+    font-size: 0.75rem;
     font-weight: bold;
     color: white;
     text-transform: uppercase;
-    transform: rotate(45deg);
+    transform: rotate(45deg); /* Pertahankan rotasi */
     letter-spacing: 0.1em;
     font-family: Inter, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .hero-image, .hero-content {
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .badge {
+        top: 1rem;
+        right: -2rem;
+        font-size: 0.6rem;
+        padding: 0.4rem 2.5rem;
+    }
 }
 
 /* Features Section */
@@ -314,10 +346,11 @@ section {
     align-items: center;
     gap: 8px;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .social-link:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .social-link i {
@@ -332,10 +365,12 @@ section {
     align-items: center;
     gap: 8px;
     transition: color var(--transition-speed) ease;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-back-to-top:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .footer-content {
@@ -349,22 +384,33 @@ section {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--epic-text);
 }
 
 .footer-section ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li a {
     color: var(--epic-light-gray);
     font-size: 0.85rem;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-section ul li a:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
+}
+
+.horizontal-divider {
+    height: 1px;
+    background-color: var(--epic-light-gray);
+    opacity: 0.2;
+    margin: 20px 0;
 }
 
 .copyright {
@@ -392,15 +438,20 @@ section {
     color: var(--epic-light-gray);
     font-size: 0.85rem;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-links a:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .footer-logos {
     display: flex;
     gap: 20px;
+}
+
+.footer-logos a {
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-logos img {
