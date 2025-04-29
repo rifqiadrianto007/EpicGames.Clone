@@ -24,6 +24,32 @@ body {
     border-width: 0;
 }
 
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.5;
+    color: white;
+    background-color: #0c0c0f;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
 /* Navigation */
 .navbar {
     background: linear-gradient(to right, #1a1330, #2a1a4a);
@@ -31,6 +57,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 
 .nav-left {
@@ -61,10 +88,11 @@ body {
     text-decoration: none;
     font-size: 0.875rem;
     font-weight: normal;
+    transition: color 0.2s ease;
 }
 
 .nav-link:hover {
-    text-decoration: underline;
+    color: #00b8ff; /* Change to blue on hover instead of underline */
 }
 
 .dropdown {
@@ -81,10 +109,11 @@ body {
     display: flex;
     align-items: center;
     gap: 0.25rem;
+    transition: color 0.2s ease;
 }
 
 .dropdown-button:hover {
-    text-decoration: underline;
+    color: #00b8ff; /* Change to blue on hover instead of underline */
 }
 
 .nav-right {
@@ -99,6 +128,11 @@ body {
     background: none;
     border: none;
     cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.language-button:hover {
+    color: #00b8ff;
 }
 
 .sign-in-button {
@@ -110,6 +144,7 @@ body {
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .sign-in-button:hover {
@@ -125,16 +160,22 @@ body {
     padding: 0.5rem 1rem;
     border: none;
     cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
 .download-button:hover {
     background-color: #00a0e6;
 }
 
+/* Hero wrapper to extend full width */
+.hero-wrapper {
+    background: linear-gradient(to bottom, #3a1a9a, #2a0a7a, #0c0c0f);
+    width: 100%;
+}
+
 /* Main hero section */
 .main-hero {
     position: relative;
-    background: linear-gradient(to bottom, #3a1a9a, #2a0a7a, #0c0c0f);
     padding: 1.5rem 1.5rem 2.5rem;
     max-width: 1280px;
     margin: 0 auto;
@@ -325,6 +366,7 @@ body {
     overflow: hidden;
     cursor: pointer;
     background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.9) 100%);
+    text-decoration: none;
 }
 
 .card-img {
@@ -626,10 +668,11 @@ body {
     align-items: center;
     gap: 8px;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .social-link:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .social-link i {
@@ -644,10 +687,12 @@ body {
     align-items: center;
     gap: 8px;
     transition: color var(--transition-speed) ease;
+    border: none;
+    cursor: pointer;
 }
 
 .btn-back-to-top:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .footer-content {
@@ -661,22 +706,33 @@ body {
     font-size: 1rem;
     font-weight: 700;
     margin-bottom: 20px;
+    color: var(--epic-text);
 }
 
 .footer-section ul {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-section ul li a {
     color: var(--epic-light-gray);
     font-size: 0.85rem;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-section ul li a:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
+}
+
+.horizontal-divider {
+    height: 1px;
+    background-color: var(--epic-light-gray);
+    opacity: 0.2;
+    margin: 20px 0;
 }
 
 .copyright {
@@ -704,15 +760,20 @@ body {
     color: var(--epic-light-gray);
     font-size: 0.85rem;
     transition: color var(--transition-speed) ease;
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-links a:hover {
-    color: var(--epic-text);
+    color: #CCCCCC; /* Abu-abu terang saat hover */
 }
 
 .footer-logos {
     display: flex;
     gap: 20px;
+}
+
+.footer-logos a {
+    text-decoration: none; /* Menghilangkan garis bawah */
 }
 
 .footer-logos img {

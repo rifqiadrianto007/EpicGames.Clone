@@ -12,395 +12,419 @@
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-left">
-            <div class="nav-logo">
-                <img alt="Epic Games logo white square with text EG" class="logo-img" height="32"
-                    src="https://storage.googleapis.com/a1aa/image/0d3ac8d2-8702-4a4d-a95b-bf132c0e198f.jpg"
-                    width="32" />
-                <i class="fas fa-chevron-down chevron-icon"></i>
-            </div>
-            <a class="nav-link" href="#">Store</a>
-            <a class="nav-link" href="#">News</a>
-            <a class="nav-link" href="#">FAQ</a>
-            <a class="nav-link" href="#">Help</a>
-            <div class="dropdown">
-                <button aria-expanded="false" aria-haspopup="true" class="dropdown-button">
-                    <span>About Epic</span>
-                    <i class="fas fa-chevron-down chevron-icon"></i>
-                </button>
-            </div>
-            <div class="dropdown">
-                <button aria-expanded="false" aria-haspopup="true" class="dropdown-button">
-                    <span>More</span>
-                    <i class="fas fa-chevron-down chevron-icon"></i>
-                </button>
-            </div>
-        </div>
-        <div class="nav-right">
-            <button aria-label="Select language" class="language-button">
-                <i class="fas fa-globe"></i>
-            </button>
-            <button class="sign-in-button">Sign in</button>
-            <button class="download-button">Download</button>
-        </div>
-    </nav>
+    <!DOCTYPE html>
+    <html lang="en">
 
-    <!-- Main content -->
-    <main class="main-hero">
-        <!-- Server status -->
-        <div class="server-status">
-            <span>Server status:</span>
-            <span class="status-indicator">
-                <i class="fas fa-check-circle"></i>
-                <span>All systems operational</span>
-            </span>
-        </div>
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>Epic Games Support</title>
+        <link href="updated_styles.css" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    </head>
 
-        <!-- Info banner -->
-        <div class="info-banner">
-            <div class="info-icon">
-                <i class="fas fa-exclamation-circle"></i>
-            </div>
-            <p>
-                <a class="info-link" href="#">Sign in</a>
-                to get faster help, access self-service tools, and manage your support
-                requests.
-            </p>
-        </div>
-
-        <!-- Heading -->
-        <div class="hero-heading">
-            <p class="subtitle">Epic Games Support</p>
-            <h1 class="title">How can we help?</h1>
-        </div>
-
-        <!-- Search input -->
-        <form aria-label="Search support" class="search-form" role="search">
-            <label class="sr-only" for="search">Search support</label>
-            <div class="search-container">
-                <div class="search-icon">
-                    <i class="fas fa-search"></i>
-                </div>
-                <input class="search-input" id="search" name="search" placeholder="Search support..." type="search" />
-            </div>
-        </form>
-
-        <!-- Go to section -->
-        <section class="go-to-section">
-            <h2 class="section-title">Go to…</h2>
-            <div class="cards-grid">
-                <!-- Card 1 -->
-                <a class="card" href="#">
-                    <img alt="Close-up image of hands typing on a keyboard with dark purple lighting" class="card-img"
-                        height="160"
-                        src="https://storage.googleapis.com/a1aa/image/a3bd34b7-6308-42a3-ff34-d06cef8f1d0f.jpg"
-                        width="320" />
-                    <div class="card-label">
-                        <span>Self-service</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                </a>
-                <!-- Card 2 -->
-                <a class="card" href="#">
-                    <img alt="Epic Games laptop with colorful light streaks background" class="card-img" height="160"
-                        src="https://storage.googleapis.com/a1aa/image/bf069be4-7187-449e-f8f3-cb8b105c3f4b.jpg"
-                        width="320" />
-                    <div class="card-label">
-                        <span>Explore topics</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                </a>
-                <!-- Card 3 -->
-                <a class="card" href="#">
-                    <img alt="Collage of Epic Games video game covers" class="card-img" height="160"
-                        src="https://storage.googleapis.com/a1aa/image/79527030-52ea-45f6-5a6e-02f5f569d818.jpg"
-                        width="320" />
-                    <div class="card-label">
-                        <span>Games</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                </a>
-                <!-- Card 4 -->
-                <a class="card" href="#">
-                    <img alt="Dark background with neon blue and purple lines" class="card-img" height="160"
-                        src="https://storage.googleapis.com/a1aa/image/817112e9-1a7d-424c-3cb7-41e8bda49aa8.jpg"
-                        width="320" />
-                    <div class="card-label">
-                        <span>Enterprise</span>
-                        <i class="fas fa-arrow-down"></i>
-                    </div>
-                </a>
-            </div>
-        </section>
-    </main>
-
-    <!-- Self-service section -->
-    <main class="section-container">
-        <h1 class="section-title">Self-service</h1>
-        <section aria-label="Self-service tools" class="self-service-grid">
-            <button class="service-button" type="button">
-                <i class="fas fa-envelope email-icon"></i>
-                <span>Forgot email address</span>
-            </button>
-            <button class="service-button" type="button">
-                <i class="fas fa-lock lock-icon"></i>
-                <span>Forgot password</span>
-            </button>
-            <button class="service-button" type="button">
-                <i class="fas fa-user-friends user-friends-icon"></i>
-                <span>Recover your account</span>
-            </button>
-            <button class="service-button" type="button">
-                <i class="fas fa-shield-alt shield-icon"></i>
-                <span>Enable two-factor authentication</span>
-            </button>
-            <button class="service-button" type="button">
-                <i class="fas fa-bookmark bookmark-icon"></i>
-                <span>Epic Games Store refunds</span>
-            </button>
-            <button class="service-button" type="button">
-                <i class="fas fa-user-friends user-friends-icon-red"></i>
-                <span>Set up parental controls</span>
-            </button>
-        </section>
-        <div class="show-all-container">
-            <button class="show-all-button" type="button">
-                <i class="fas fa-wrench"></i>
-                <span>Show all tools</span>
-            </button>
-        </div>
-
-        <h2 class="section-title">Explore topics</h2>
-        <section aria-label="Explore topics" class="topics-grid">
-            <article aria-label="Accounts: Manage sign-in issues, authentication, and account details."
-                class="topic-card" role="link" tabindex="0">
-                <img alt="Epic Games Account Login Screen with purple and blue light streaks background"
-                    class="topic-img" height="400" loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/a0e3c57c-da4e-4a4b-ae57-ef6b6455353d.jpg"
-                    width="600" />
-                <div class="topic-content">
-                    <h3 class="topic-title">Accounts</h3>
-                    <p class="topic-description">Manage sign-in issues, authentication, and account details.</p>
-                </div>
-            </article>
-            <article aria-label="Epic Games Store: Resolve store issues and improve functionality." class="topic-card"
-                role="link" tabindex="0">
-                <img alt="Epic Games Store game library screen with dark theme and Hades game highlighted"
-                    class="topic-img" height="400" loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/eee07866-7104-4a7e-5a95-010477e16f95.jpg"
-                    width="600" />
-                <div class="topic-content">
-                    <h3 class="topic-title">Epic Games Store</h3>
-                    <p class="topic-description">Resolve store issues and improve functionality.</p>
-                </div>
-            </article>
-            <article aria-label="Payments and purchases: Manage payment methods and solve purchase issues."
-                class="topic-card" role="link" tabindex="0">
-                <img alt="Close-up of credit card numbers and chip with blue background" class="topic-img" height="400"
-                    loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/e074d2f1-3058-45cc-910e-26c155936932.jpg"
-                    width="600" />
-                <div class="topic-content">
-                    <h3 class="topic-title">Payments and purchases</h3>
-                    <p class="topic-description">Manage payment methods and solve purchase issues.</p>
-                </div>
-            </article>
-        </section>
-    </main>
-
-    <!-- Enterprise section -->
-    <main class="enterprise-container">
-        <h1 class="section-title">Enterprise</h1>
-        <section aria-label="Enterprise products" class="enterprise-grid">
-            <a aria-label="Unreal Engine" class="enterprise-card" href="#">
-                <img alt="Unreal Engine forest landscape with rocks and trees" class="enterprise-img" height="350"
-                    loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/9b95b977-5710-4aca-c2b7-5e7217477201.jpg"
-                    width="600" />
-                <div class="enterprise-logo">
-                    <img alt="Unreal Engine logo white circle with U letter" class="logo-img" height="32" loading="lazy"
-                        src="https://storage.googleapis.com/a1aa/image/a03767f2-9d8c-4fa4-e3ae-dcc5be120d8e.jpg"
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="nav-logo">
+                    <img alt="Epic Games logo white square with text EG" class="logo-img" height="32"
+                        src="https://storage.googleapis.com/a1aa/image/0d3ac8d2-8702-4a4d-a95b-bf132c0e198f.jpg"
                         width="32" />
-                    <span>UNREAL ENGINE</span>
+                    <i class="fas fa-chevron-down chevron-icon"></i>
                 </div>
-            </a>
-            <a aria-label="FAB" class="enterprise-card" href="#">
-                <img alt="FAB futuristic vehicle in neon city street at night" class="enterprise-img" height="350"
-                    loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/3ee6f2ee-9d73-44bd-9434-cf1c5138fc0a.jpg"
-                    width="600" />
-                <div class="enterprise-logo">
-                    <img alt="FAB logo white stylized text" class="fab-logo" height="32" loading="lazy"
-                        src="https://storage.googleapis.com/a1aa/image/8f437515-9447-4d9c-50a0-c0a9def38aca.jpg"
-                        width="48" />
+                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link" href="#">News</a>
+                <a class="nav-link" href="#">FAQ</a>
+                <a class="nav-link" href="#">Help</a>
+                <div class="dropdown">
+                    <button aria-expanded="false" aria-haspopup="true" class="dropdown-button">
+                        <span>About Epic</span>
+                        <i class="fas fa-chevron-down chevron-icon"></i>
+                    </button>
                 </div>
-            </a>
-            <a aria-label="Unreal Editor for Fortnite" class="enterprise-card" href="#">
-                <img alt="Unreal Editor robot with red glowing eyes in dark environment" class="enterprise-img"
-                    height="350" loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/7d1259d8-8e06-4789-8e41-c38261e2422c.jpg"
-                    width="600" />
-                <div class="enterprise-logo-column">
+                <div class="dropdown">
+                    <button aria-expanded="false" aria-haspopup="true" class="dropdown-button">
+                        <span>More</span>
+                        <i class="fas fa-chevron-down chevron-icon"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="nav-right">
+                <button aria-label="Select language" class="language-button">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <button class="sign-in-button">Sign in</button>
+                <button class="download-button">Download</button>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="hero-wrapper">
+            <main class="main-hero">
+                <!-- Server status -->
+                <div class="server-status">
+                    <span>Server status:</span>
+                    <span class="status-indicator">
+                        <i class="fas fa-check-circle"></i>
+                        <span>All systems operational</span>
+                    </span>
+                </div>
+
+                <!-- Info banner -->
+                <div class="info-banner">
+                    <div class="info-icon">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <p>
+                        <a class="info-link" href="#">Sign in</a>
+                        to get faster help, access self-service tools, and manage your support
+                        requests.
+                    </p>
+                </div>
+
+                <!-- Heading -->
+                <div class="hero-heading">
+                    <p class="subtitle">Epic Games Support</p>
+                    <h1 class="title">How can we help?</h1>
+                </div>
+
+                <!-- Search input -->
+                <form aria-label="Search support" class="search-form" role="search">
+                    <label class="sr-only" for="search">Search support</label>
+                    <div class="search-container">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <input class="search-input" id="search" name="search" placeholder="Search support..."
+                            type="search" />
+                    </div>
+                </form>
+
+                <!-- Go to section -->
+                <section class="go-to-section">
+                    <h2 class="section-title">Go to…</h2>
+                    <div class="cards-grid">
+                        <!-- Card 1 -->
+                        <a class="card" href="#">
+                            <img alt="Close-up image of hands typing on a keyboard with dark purple lighting"
+                                class="card-img" height="160"
+                                src="https://storage.googleapis.com/a1aa/image/a3bd34b7-6308-42a3-ff34-d06cef8f1d0f.jpg"
+                                width="320" />
+                            <div class="card-label">
+                                <span>Self-service</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </a>
+                        <!-- Card 2 -->
+                        <a class="card" href="#">
+                            <img alt="Epic Games laptop with colorful light streaks background" class="card-img"
+                                height="160"
+                                src="https://storage.googleapis.com/a1aa/image/bf069be4-7187-449e-f8f3-cb8b105c3f4b.jpg"
+                                width="320" />
+                            <div class="card-label">
+                                <span>Explore topics</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </a>
+                        <!-- Card 3 -->
+                        <a class="card" href="#">
+                            <img alt="Collage of Epic Games video game covers" class="card-img" height="160"
+                                src="https://storage.googleapis.com/a1aa/image/79527030-52ea-45f6-5a6e-02f5f569d818.jpg"
+                                width="320" />
+                            <div class="card-label">
+                                <span>Games</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </a>
+                        <!-- Card 4 -->
+                        <a class="card" href="#">
+                            <img alt="Dark background with neon blue and purple lines" class="card-img" height="160"
+                                src="https://storage.googleapis.com/a1aa/image/817112e9-1a7d-424c-3cb7-41e8bda49aa8.jpg"
+                                width="320" />
+                            <div class="card-label">
+                                <span>Enterprise</span>
+                                <i class="fas fa-arrow-down"></i>
+                            </div>
+                        </a>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Self-service section -->
+        <main class="section-container">
+            <h1 class="section-title">Self-service</h1>
+            <section aria-label="Self-service tools" class="self-service-grid">
+                <button class="service-button" type="button">
+                    <i class="fas fa-envelope email-icon"></i>
+                    <span>Forgot email address</span>
+                </button>
+                <button class="service-button" type="button">
+                    <i class="fas fa-lock lock-icon"></i>
+                    <span>Forgot password</span>
+                </button>
+                <button class="service-button" type="button">
+                    <i class="fas fa-user-friends user-friends-icon"></i>
+                    <span>Recover your account</span>
+                </button>
+                <button class="service-button" type="button">
+                    <i class="fas fa-shield-alt shield-icon"></i>
+                    <span>Enable two-factor authentication</span>
+                </button>
+                <button class="service-button" type="button">
+                    <i class="fas fa-bookmark bookmark-icon"></i>
+                    <span>Epic Games Store refunds</span>
+                </button>
+                <button class="service-button" type="button">
+                    <i class="fas fa-user-friends user-friends-icon-red"></i>
+                    <span>Set up parental controls</span>
+                </button>
+            </section>
+            <div class="show-all-container">
+                <button class="show-all-button" type="button">
+                    <i class="fas fa-wrench"></i>
+                    <span>Show all tools</span>
+                </button>
+            </div>
+
+            <h2 class="section-title">Explore topics</h2>
+            <section aria-label="Explore topics" class="topics-grid">
+                <article aria-label="Accounts: Manage sign-in issues, authentication, and account details."
+                    class="topic-card" role="link" tabindex="0">
+                    <img alt="Epic Games Account Login Screen with purple and blue light streaks background"
+                        class="topic-img" height="400" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/a0e3c57c-da4e-4a4b-ae57-ef6b6455353d.jpg"
+                        width="600" />
+                    <div class="topic-content">
+                        <h3 class="topic-title">Accounts</h3>
+                        <p class="topic-description">Manage sign-in issues, authentication, and account details.</p>
+                    </div>
+                </article>
+                <article aria-label="Epic Games Store: Resolve store issues and improve functionality."
+                    class="topic-card" role="link" tabindex="0">
+                    <img alt="Epic Games Store game library screen with dark theme and Hades game highlighted"
+                        class="topic-img" height="400" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/eee07866-7104-4a7e-5a95-010477e16f95.jpg"
+                        width="600" />
+                    <div class="topic-content">
+                        <h3 class="topic-title">Epic Games Store</h3>
+                        <p class="topic-description">Resolve store issues and improve functionality.</p>
+                    </div>
+                </article>
+                <article aria-label="Payments and purchases: Manage payment methods and solve purchase issues."
+                    class="topic-card" role="link" tabindex="0">
+                    <img alt="Close-up of credit card numbers and chip with blue background" class="topic-img"
+                        height="400" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/e074d2f1-3058-45cc-910e-26c155936932.jpg"
+                        width="600" />
+                    <div class="topic-content">
+                        <h3 class="topic-title">Payments and purchases</h3>
+                        <p class="topic-description">Manage payment methods and solve purchase issues.</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+
+        <!-- Enterprise section -->
+        <main class="enterprise-container">
+            <h1 class="section-title">Enterprise</h1>
+            <section aria-label="Enterprise products" class="enterprise-grid">
+                <a aria-label="Unreal Engine" class="enterprise-card" href="#">
+                    <img alt="Unreal Engine forest landscape with rocks and trees" class="enterprise-img" height="350"
+                        loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/9b95b977-5710-4aca-c2b7-5e7217477201.jpg"
+                        width="600" />
                     <div class="enterprise-logo">
                         <img alt="Unreal Engine logo white circle with U letter" class="logo-img" height="32"
                             loading="lazy"
                             src="https://storage.googleapis.com/a1aa/image/a03767f2-9d8c-4fa4-e3ae-dcc5be120d8e.jpg"
                             width="32" />
-                        <span>UNREAL EDITOR</span>
+                        <span>UNREAL ENGINE</span>
                     </div>
-                    <span class="subtitle-text">FOR FORTNITE</span>
-                </div>
-            </a>
-            <a aria-label="Twinmotion" class="enterprise-card" href="#">
-                <img alt="Twinmotion city street with cars and buildings in daylight" class="enterprise-img"
-                    height="350" loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/66cb6f66-dbec-41df-7964-6e1ab09d7de4.jpg"
-                    width="600" />
-                <div class="enterprise-logo">
-                    <img alt="Twinmotion logo white stylized T letter" class="logo-img" height="32" loading="lazy"
-                        src="https://storage.googleapis.com/a1aa/image/2adf0e12-9e1d-4fe5-e4fe-9dd11de1095c.jpg"
-                        width="32" />
-                    <span>TWINMOTION</span>
-                </div>
-            </a>
-            <a aria-label="Online Services" class="enterprise-card" href="#">
-                <img alt="Online Services people in front of computer with neon lights" class="enterprise-img"
-                    height="350" loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/ccbbe525-0eea-4169-3140-8f6f40362a71.jpg"
-                    width="600" />
-                <div class="enterprise-logo">
-                    <img alt="Epic Games logo white shield with EPIC text" class="logo-img" height="32" loading="lazy"
-                        src="https://storage.googleapis.com/a1aa/image/24a07c62-5c68-463e-9c08-61268d6a2e3e.jpg"
-                        width="32" />
-                    <span>ONLINE SERVICES</span>
-                </div>
-            </a>
-            <a aria-label="Kids Web Services" class="enterprise-card" href="#">
-                <img alt="Kids Web Services three people looking at laptop" class="enterprise-img" height="350"
-                    loading="lazy"
-                    src="https://storage.googleapis.com/a1aa/image/9a92ed2a-0b9c-4cd6-0fdc-2b49be8f06ef.jpg"
-                    width="600" />
-                <div class="enterprise-logo-column">
+                </a>
+                <a aria-label="FAB" class="enterprise-card" href="#">
+                    <img alt="FAB futuristic vehicle in neon city street at night" class="enterprise-img" height="350"
+                        loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/3ee6f2ee-9d73-44bd-9434-cf1c5138fc0a.jpg"
+                        width="600" />
                     <div class="enterprise-logo">
-                        <img alt="Kids Web Services white shield with KWS text" class="logo-img" height="32"
-                            loading="lazy"
-                            src="https://storage.googleapis.com/a1aa/image/96f4e3ce-8ee0-42d3-c0cc-ad8d2ca73d34.jpg"
-                            width="32" />
-                        <span>KWS</span>
+                        <img alt="FAB logo white stylized text" class="fab-logo" height="32" loading="lazy"
+                            src="https://storage.googleapis.com/a1aa/image/8f437515-9447-4d9c-50a0-c0a9def38aca.jpg"
+                            width="48" />
                     </div>
-                    <span class="subtitle-text">KIDS WEB SERVICES</span>
+                </a>
+                <a aria-label="Unreal Editor for Fortnite" class="enterprise-card" href="#">
+                    <img alt="Unreal Editor robot with red glowing eyes in dark environment" class="enterprise-img"
+                        height="350" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/7d1259d8-8e06-4789-8e41-c38261e2422c.jpg"
+                        width="600" />
+                    <div class="enterprise-logo-column">
+                        <div class="enterprise-logo">
+                            <img alt="Unreal Engine logo white circle with U letter" class="logo-img" height="32"
+                                loading="lazy"
+                                src="https://storage.googleapis.com/a1aa/image/a03767f2-9d8c-4fa4-e3ae-dcc5be120d8e.jpg"
+                                width="32" />
+                            <span>UNREAL EDITOR</span>
+                        </div>
+                        <span class="subtitle-text">FOR FORTNITE</span>
+                    </div>
+                </a>
+                <a aria-label="Twinmotion" class="enterprise-card" href="#">
+                    <img alt="Twinmotion city street with cars and buildings in daylight" class="enterprise-img"
+                        height="350" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/66cb6f66-dbec-41df-7964-6e1ab09d7de4.jpg"
+                        width="600" />
+                    <div class="enterprise-logo">
+                        <img alt="Twinmotion logo white stylized T letter" class="logo-img" height="32" loading="lazy"
+                            src="https://storage.googleapis.com/a1aa/image/2adf0e12-9e1d-4fe5-e4fe-9dd11de1095c.jpg"
+                            width="32" />
+                        <span>TWINMOTION</span>
+                    </div>
+                </a>
+                <a aria-label="Online Services" class="enterprise-card" href="#">
+                    <img alt="Online Services people in front of computer with neon lights" class="enterprise-img"
+                        height="350" loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/ccbbe525-0eea-4169-3140-8f6f40362a71.jpg"
+                        width="600" />
+                    <div class="enterprise-logo">
+                        <img alt="Epic Games logo white shield with EPIC text" class="logo-img" height="32"
+                            loading="lazy"
+                            src="https://storage.googleapis.com/a1aa/image/24a07c62-5c68-463e-9c08-61268d6a2e3e.jpg"
+                            width="32" />
+                        <span>ONLINE SERVICES</span>
+                    </div>
+                </a>
+                <a aria-label="Kids Web Services" class="enterprise-card" href="#">
+                    <img alt="Kids Web Services three people looking at laptop" class="enterprise-img" height="350"
+                        loading="lazy"
+                        src="https://storage.googleapis.com/a1aa/image/9a92ed2a-0b9c-4cd6-0fdc-2b49be8f06ef.jpg"
+                        width="600" />
+                    <div class="enterprise-logo-column">
+                        <div class="enterprise-logo">
+                            <img alt="Kids Web Services white shield with KWS text" class="logo-img" height="32"
+                                loading="lazy"
+                                src="https://storage.googleapis.com/a1aa/image/96f4e3ce-8ee0-42d3-c0cc-ad8d2ca73d34.jpg"
+                                width="32" />
+                            <span>KWS</span>
+                        </div>
+                        <span class="subtitle-text">KIDS WEB SERVICES</span>
+                    </div>
+                </a>
+            </section>
+        </main>
+        <footer class="main-footer">
+            <div class="footer-container">
+                <div class="footer-top">
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                    </div>
+                    <button class="btn-back-to-top"><i class="fa fa-chevron-up"></i> UP</button>
                 </div>
-            </a>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <div class="footer-container">
-            <div class="footer-top">
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
-                    <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <h4>Marketplaces</h4>
+                        <ul>
+                            <li><a href="#">Epic Games Store</a></li>
+                            <li><a href="#">Fab</a></li>
+                            <li><a href="#">Sketchfab</a></li>
+                            <li><a href="#">ArtStation</a></li>
+                            <li><a href="#">Store Refund Policy</a></li>
+                            <li><a href="#">Store EULA</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Tools</h4>
+                        <ul>
+                            <li><a href="#">Unreal Engine</a></li>
+                            <li><a href="#">UEFN</a></li>
+                            <li><a href="#">MetaHuman</a></li>
+                            <li><a href="#">Twinmotion</a></li>
+                            <li><a href="#">Megascans</a></li>
+                            <li><a href="#">RealityScan</a></li>
+                            <li><a href="#">Rad Game Tools</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Online Services</h4>
+                        <ul>
+                            <li><a href="#">Epic Online Services</a></li>
+                            <li><a href="#">Kids Web Service</a></li>
+                            <li><a href="#">Services Agreement</a></li>
+                            <li><a href="#">Acceptable Use Policy</a></li>
+                            <li><a href="#">Trust Statement</a></li>
+                            <li><a href="#">Subprocessor List</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Newsroom</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Students</a></li>
+                            <li><a href="#">UX Research</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-section">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Dev Community</a></li>
+                            <li><a href="#">MegaGrants</a></li>
+                            <li><a href="#">Support-A-Creator</a></li>
+                            <li><a href="#">Creator Agreement</a></li>
+                            <li><a href="#">Distribute on Epic Games</a></li>
+                            <li><a href="#">Unreal Engine Branding Guide</a></li>
+                            <li><a href="#">Fan Art Policy</a></li>
+                            <li><a href="#">Comuunity Rules</a></li>
+                            <li><a href="#">EU Digital Services Act</a></li>
+                            <li><a href="#">Epic Pro Support</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <button class="btn-back-to-top"><i class="fa fa-chevron-up"></i> UP</button>
+
+                <div class="horizontal-divider"></div>
+
+                <div class="copyright">
+                    <p>
+                        © 2025, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite,
+                        the
+                        Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal
+                        Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States
+                        of
+                        America and elsewhere. Other brands or product names are the trademarks of their respective
+                        owners.
+                        Our websites may contain links to other sites and resources provided by third parties. These
+                        links
+                        are provided for your convenience only. Epic Games has no control over the contents of those
+                        sites
+                        or resources, and accepts no responsibility for them or for any loss or damage that may arise
+                        from
+                        your use of them.
+                    </p>
+                </div>
+
+                <div class="footer-bottom">
+                    <div class="footer-links">
+                        <a href="#">Terms of Service</a>
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Store Refund Policy</a>
+                    </div>
+                    <div class="footer-logos">
+                        <a href="#"><img src="./static/img/logo-epic.svg" alt="Epic Logo"></a>
+                        <a href="#"><img src="./static/img/unreal-logo.svg" alt="Unreal Logo"></a>
+                    </div>
+                </div>
             </div>
+        </footer>
+    </body>
+    <script src="static/JS/support.js"></script>
 
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h4>Marketplaces</h4>
-                    <ul>
-                        <li><a href="#">Epic Games Store</a></li>
-                        <li><a href="#">Fab</a></li>
-                        <li><a href="#">Sketchfab</a></li>
-                        <li><a href="#">ArtStation</a></li>
-                        <li><a href="#">Store Refund Policy</a></li>
-                        <li><a href="#">Store EULA</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Tools</h4>
-                    <ul>
-                        <li><a href="#">Unreal Engine</a></li>
-                        <li><a href="#">UEFN</a></li>
-                        <li><a href="#">MetaHuman</a></li>
-                        <li><a href="#">Twinmotion</a></li>
-                        <li><a href="#">Megascans</a></li>
-                        <li><a href="#">RealityScan</a></li>
-                        <li><a href="#">Rad Game Tools</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Online Services</h4>
-                    <ul>
-                        <li><a href="#">Epic Online Services</a></li>
-                        <li><a href="#">Kids Web Service</a></li>
-                        <li><a href="#">Services Agreement</a></li>
-                        <li><a href="#">Acceptable Use Policy</a></li>
-                        <li><a href="#">Trust Statement</a></li>
-                        <li><a href="#">Subprocessor List</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Company</h4>
-                    <ul>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Newsroom</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Students</a></li>
-                        <li><a href="#">UX Research</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="#">Dev Community</a></li>
-                        <li><a href="#">MegaGrants</a></li>
-                        <li><a href="#">Support-A-Creator</a></li>
-                        <li><a href="#">Creator Agreement</a></li>
-                        <li><a href="#">Distribute on Epic Games</a></li>
-                        <li><a href="#">Unreal Engine Branding Guide</a></li>
-                        <li><a href="#">Fan Art Policy</a></li>
-                        <li><a href="#">Comuunity Rules</a></li>
-                        <li><a href="#">EU Digital Services Act</a></li>
-                        <li><a href="#">Epic Pro Support</a></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="horizontal-divider"></div>
-
-            <div class="copyright">
-                <p>
-                    © 2025, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the
-                    Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal
-                    Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of
-                    America and elsewhere. Other brands or product names are the trademarks of their respective owners.
-                    Our websites may contain links to other sites and resources provided by third parties. These links
-                    are provided for your convenience only. Epic Games has no control over the contents of those sites
-                    or resources, and accepts no responsibility for them or for any loss or damage that may arise from
-                    your use of them.
-                </p>
-            </div>
-
-            <div class="footer-bottom">
-                <div class="footer-links">
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Store Refund Policy</a>
-                </div>
-                <div class="footer-logos">
-                    <a href="#"><img src="./static/img/logo-epic.svg" alt="Epic Logo"></a>
-                    <a href="#"><img src="./static/img/unreal-logo.svg" alt="Unreal Logo"></a>
-                </div>
-            </div>
-        </div>
-    </footer>
-</body>
-<script src="static/JS/support.js"></script>
-
-</html>
+    </html>
