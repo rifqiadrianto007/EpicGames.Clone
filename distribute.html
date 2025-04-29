@@ -1,385 +1,257 @@
+<!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Epic Games Store
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
-    body {
-      font-family: "Inter", sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-[#121212] text-white min-h-screen">
-  <header class="flex items-center gap-8 px-24 py-6">
-   <form class="relative flex items-center flex-1 max-w-xs">
-    <input class="w-full rounded-full bg-[#1E1E1E] py-2 pl-10 pr-4 text-sm placeholder:text-white/60 focus:outline-none" placeholder="Search store" type="text"/>
-    <i class="fas fa-search absolute left-3 text-white/60">
-    </i>
-   </form>
-   <nav class="flex gap-8 text-sm font-normal">
-    <a class="hover:underline" href="#">
-     Discover
-    </a>
-    <a class="hover:underline" href="#">
-     Browse
-    </a>
-    <a class="hover:underline" href="#">
-     News
-    </a>
-   </nav>
-  </header>
-  <main class="px-24 pb-24 space-y-8">
-   <section class="relative flex flex-col md:flex-row items-center justify-between rounded-lg overflow-hidden" style="background: linear-gradient(90deg, #00003B 0%, #1B0E4B 100%)">
-    <img alt="Illustration of computer screen with mouse and colorful blocks floating around" class="w-full md:w-1/2 object-contain" height="300" src="https://storage.googleapis.com/a1aa/image/a2f0555b-8ea5-4db6-ee75-7e28721cea7c.jpg" width="400"/>
-    <div class="relative flex flex-col items-center md:items-start text-center md:text-left p-8 md:p-16 space-y-6 md:w-1/2">
-     <img alt="Epic Games Store logo in white" class="mb-2" height="80" src="https://storage.googleapis.com/a1aa/image/10ecb847-807f-49a0-111d-8441cce61c8c.jpg" width="80"/>
-     <h1 class="text-3xl md:text-4xl font-extrabold leading-tight max-w-xs">
-      Open to all PC developers and publishers.
-     </h1>
-     <button class="bg-white text-black font-bold text-xs uppercase rounded-md py-3 px-8 tracking-widest hover:bg-gray-200 transition">
-      Sign up today
-     </button>
-     <p class="text-xs max-w-xs">
-      Start distributing PC games on the Epic Games Store with our new
-          self-service publishing tools.
-     </p>
-    </div>
-    <div class="absolute top-4 right-4 text-[9px] font-bold text-white uppercase rotate-[45deg] tracking-widest" style="font-family: Inter, sans-serif;">
-     Available now on mobile!
-    </div>
-   </section>
-  </main>
- </body>
-</html>
 
-
-<!--  -->
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Epic Store Features
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <style>
-   @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-[#121212] text-white min-h-screen overflow-y-scroll">
-  <div class="max-w-7xl mx-auto px-6 py-10">
-   <nav class="flex items-center space-x-6 mb-16">
-    <form class="flex items-center bg-[#1E1E1E] rounded-full px-4 py-2 w-60">
-     <i class="fas fa-search text-gray-400 text-sm">
-     </i>
-     <input aria-label="Search store" class="bg-transparent text-white placeholder-gray-400 text-sm ml-3 focus:outline-none w-full" placeholder="Search store" type="search"/>
-    </form>
-    <a class="text-gray-300 text-sm hover:text-white" href="#">
-     Discover
-    </a>
-    <a class="text-gray-300 text-sm hover:text-white" href="#">
-     Browse
-    </a>
-    <a class="text-gray-300 text-sm hover:text-white" href="#">
-     News
-    </a>
-   </nav>
-   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-    <!-- Card 1 -->
-    <div class="border border-[#2A2A2A] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a globe with orbiting lines and colorful squares around it" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/a897de5d-d462-4698-9213-6f6e6424526f.jpg" width="100"/>
-     <h2 class="text-white text-xl leading-snug mb-6">
-      Reach a Global Audience
-     </h2>
-     <p class="text-gray-400 font-semibold text-center leading-relaxed max-w-xs">
-      Direct distribution to over 270 million Epic users across 187 countries with 16 languages supported.
-     </p>
-    </div>
-    <!-- Card 2 -->
-    <div class="border border-[#2A2A2A] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a pie chart and stack of coins with colorful squares around" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/fa235f78-7da8-4d77-9f31-3b14768558fe.jpg" width="100"/>
-     <h2 class="text-white text-xl leading-snug mb-6">
-      88%/12% Revenue Split
-     </h2>
-     <p class="text-gray-400 font-semibold text-center leading-relaxed max-w-xs">
-      Keep 88% of the revenue and monitor product performance with integrated analytics dashboards.
-     </p>
-    </div>
-    <!-- Card 3 -->
-    <div class="border border-[#2A2A2A] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a trophy and game controllers with colorful squares around" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/6cbc3582-5bd7-4a65-bc64-bd94d5c6e037.jpg" width="100"/>
-     <h2 class="text-white text-xl leading-snug mb-6">
-      Drive Player Engagement
-     </h2>
-     <p class="text-gray-400 font-semibold text-center leading-relaxed max-w-xs">
-      Tap into store features like wishlists, achievements, store-wide promotions and more!
-     </p>
-    </div>
-   </div>
-  </div>
- </body>
-</html>
-
-<!--  -->
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Epic Features
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: "Inter", sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-[#121217] text-white min-h-screen overflow-y-scroll">
-  <nav class="flex items-center gap-6 px-24 py-6">
-   <form class="relative flex items-center">
-    <input class="bg-[#1B1B22] rounded-full pl-10 pr-4 py-2 text-sm placeholder:text-[#A3A3A3] focus:outline-none" placeholder="Search store" type="search"/>
-    <i class="fas fa-search absolute left-3 text-[#A3A3A3]">
-    </i>
-   </form>
-   <ul class="flex gap-8 text-sm font-normal">
-    <li>
-     <a class="hover:underline" href="#">
-      Discover
-     </a>
-    </li>
-    <li>
-     <a class="hover:underline" href="#">
-      Browse
-     </a>
-    </li>
-    <li>
-     <a class="hover:underline" href="#">
-      News
-     </a>
-    </li>
-   </ul>
-  </nav>
-  <main class="px-24 pb-24 space-y-8">
-   <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a purple shopping cart with currency icons around it representing worldwide e-commerce" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/ba0053c4-f3e8-4de6-1b43-52671f2c6730.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Worldwide E-Commerce
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Epic's payment service supports 100+ payment methods with 43 regional
-          currencies and more on the way.
-     </p>
-    </article>
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a blue wallet with colorful squares floating above it representing Epic Wallet" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/0f368443-feb6-49e4-44b6-22a723347be8.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Epic Wallet
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Users can load up their Wallet with funds to spend on products and
-          services in the store, now available in more than 180 countries.
-     </p>
-    </article>
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of an atom with colorful squares orbiting representing additional benefits" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/1772931d-4f24-479f-de80-b47a5d213745.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Additional Benefits
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Easy IARC ratings in Epic Developer Portal, request no-cost localization
-          for store pages and activate our Support-A-Creator affiliate network.
-     </p>
-    </article>
-   </section>
-  </main>
- </body>
-</html>
-
-<!--  -->
-<html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1" name="viewport"/>
-  <title>
-   Epic Features
-  </title>
-  <script src="https://cdn.tailwindcss.com">
-  </script>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com/css2?family=Inter&amp;display=swap" rel="stylesheet"/>
-  <style>
-   body {
-      font-family: "Inter", sans-serif;
-    }
-  </style>
- </head>
- <body class="bg-[#121217] text-white min-h-screen overflow-y-scroll">
-  <nav class="flex items-center gap-6 px-24 py-6">
-   <form class="relative flex items-center">
-    <input class="bg-[#1B1B22] rounded-full pl-10 pr-4 py-2 text-sm placeholder:text-[#A3A3A3] focus:outline-none" placeholder="Search store" type="search"/>
-    <i class="fas fa-search absolute left-3 text-[#A3A3A3]">
-    </i>
-   </form>
-   <ul class="flex gap-8 text-sm font-normal">
-    <li>
-     <a class="hover:underline" href="#">
-      Discover
-     </a>
-    </li>
-    <li>
-     <a class="hover:underline" href="#">
-      Browse
-     </a>
-    </li>
-    <li>
-     <a class="hover:underline" href="#">
-      News
-     </a>
-    </li>
-   </ul>
-  </nav>
-  <main class="px-24 pb-24 space-y-8">
-   <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a purple shopping cart with currency icons around it representing worldwide e-commerce" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/ba0053c4-f3e8-4de6-1b43-52671f2c6730.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Worldwide E-Commerce
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Epic's payment service supports 100+ payment methods with 43 regional
-          currencies and more on the way.
-     </p>
-    </article>
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of a blue wallet with colorful squares floating above it representing Epic Wallet" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/0f368443-feb6-49e4-44b6-22a723347be8.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Epic Wallet
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Users can load up their Wallet with funds to spend on products and
-          services in the store, now available in more than 180 countries.
-     </p>
-    </article>
-    <article class="border border-[#2A2A33] rounded-xl p-8 flex flex-col items-center text-center">
-     <img alt="Illustration of an atom with colorful squares orbiting representing additional benefits" class="mb-8" height="100" src="https://storage.googleapis.com/a1aa/image/1772931d-4f24-479f-de80-b47a5d213745.jpg" width="100"/>
-     <h2 class="text-xl font-normal mb-8 leading-snug">
-      Additional Benefits
-     </h2>
-     <p class="text-[#B9B9B9] font-semibold leading-relaxed max-w-xs">
-      Easy IARC ratings in Epic Developer Portal, request no-cost localization
-          for store pages and activate our Support-A-Creator affiliate network.
-     </p>
-    </article>
-   </section>
-  </main>
- </body>
-</html>
-
-<!--  -->
-<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>FAQ Epic Games Store</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
-    body {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Epic Games Store</title>
+    <link href="static/css/distribute.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="static/img/logo-epic.svg">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
 </head>
-<body class="bg-[#121217] text-[#e6e6e6] min-h-screen">
-  <header class="flex items-center gap-6 px-6 py-4">
-    <form class="relative flex items-center" role="search" aria-label="Search store">
-      <input
-        type="search"
-        placeholder="Search store"
-        class="bg-[#1e1e24] rounded-full pl-10 pr-4 py-2 text-sm text-[#e6e6e6] placeholder-[#a1a1a1] focus:outline-none focus:ring-2 focus:ring-[#3a3a43] w-48 sm:w-64"
-        aria-label="Search store"
-      />
-      <i class="fas fa-search absolute left-3 text-[#a1a1a1] text-xs"></i>
-    </form>
-    <nav class="flex gap-6 text-sm font-normal">
-      <a href="#" class="hover:underline">Discover</a>
-      <a href="#" class="hover:underline">Browse</a>
-      <a href="#" class="hover:underline">News</a>
-    </nav>
-  </header>
 
-  <main class="max-w-5xl mx-auto px-6 py-12">
-    <h1 class="text-white text-center text-xl sm:text-2xl font-normal mb-16">
-      Frequently Asked Questions
-    </h1>
+<body>
+    <header>
+        <form class="search-form">
+            <input placeholder="Search store" type="text" />
+            <i class="fas fa-search search-icon"></i>
+        </form>
+        <nav class="main-nav">
+            <a href="#">Discover</a>
+            <a href="#">Browse</a>
+            <a href="#">News</a>
+        </nav>
+    </header>
 
-    <section class="divide-y divide-[#222227]">
-      <article class="py-6 flex flex-col">
-        <div class="flex justify-between items-center">
-          <h2 class="text-white font-semibold text-base sm:text-lg max-w-[90%]">
-            Why should I distribute my game on the Epic Games Store?
-          </h2>
-          <span class="text-white text-xl select-none">—</span>
+    <main>
+        <!-- Hero section -->
+        <section class="hero">
+            <img class="hero-image" alt="Illustration of computer screen with mouse and colorful blocks floating around"
+                src="https://storage.googleapis.com/a1aa/image/a2f0555b-8ea5-4db6-ee75-7e28721cea7c.jpg" />
+            <div class="hero-content">
+                <img class="epic-logo" alt="Epic Games Store logo in white"
+                    src="https://storage.googleapis.com/a1aa/image/10ecb847-807f-49a0-111d-8441cce61c8c.jpg" />
+                <h1>Open to all PC developers and publishers.</h1>
+                <button class="cta-button">Sign up today</button>
+                <p class="hero-description">Start distributing PC games on the Epic Games Store with our new
+                    self-service publishing tools.</p>
+            </div>
+            <div class="badge">Available now on mobile!</div>
+        </section>
+
+        <!-- Features section -->
+        <section class="features">
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <img alt="Illustration of a globe with orbiting lines and colorful squares around it"
+                    src="https://storage.googleapis.com/a1aa/image/a897de5d-d462-4698-9213-6f6e6424526f.jpg" />
+                <h2>Reach a Global Audience</h2>
+                <p>Direct distribution to over 270 million Epic users across 187 countries with 16 languages supported.
+                </p>
+            </div>
+            <!-- Card 2 -->
+            <div class="feature-card">
+                <img alt="Illustration of a pie chart and stack of coins with colorful squares around"
+                    src="https://storage.googleapis.com/a1aa/image/fa235f78-7da8-4d77-9f31-3b14768558fe.jpg" />
+                <h2>88%/12% Revenue Split</h2>
+                <p>Keep 88% of the revenue and monitor product performance with integrated analytics dashboards.</p>
+            </div>
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <img alt="Illustration of a trophy and game controllers with colorful squares around"
+                    src="https://storage.googleapis.com/a1aa/image/6cbc3582-5bd7-4a65-bc64-bd94d5c6e037.jpg" />
+                <h2>Drive Player Engagement</h2>
+                <p>Tap into store features like wishlists, achievements, store-wide promotions and more!</p>
+            </div>
+        </section>
+
+        <!-- Additional features -->
+        <section class="additional-features">
+            <article class="feature-card">
+                <img alt="Illustration of a purple shopping cart with currency icons around it representing worldwide e-commerce"
+                    src="https://storage.googleapis.com/a1aa/image/ba0053c4-f3e8-4de6-1b43-52671f2c6730.jpg" />
+                <h2>Worldwide E-Commerce</h2>
+                <p>Epic's payment service supports 100+ payment methods with 43 regional currencies and more on the way.
+                </p>
+            </article>
+            <article class="feature-card">
+                <img alt="Illustration of a blue wallet with colorful squares floating above it representing Epic Wallet"
+                    src="https://storage.googleapis.com/a1aa/image/0f368443-feb6-49e4-44b6-22a723347be8.jpg" />
+                <h2>Epic Wallet</h2>
+                <p>Users can load up their Wallet with funds to spend on products and services in the store, now
+                    available in more than 180 countries.</p>
+            </article>
+            <article class="feature-card">
+                <img alt="Illustration of an atom with colorful squares orbiting representing additional benefits"
+                    src="https://storage.googleapis.com/a1aa/image/1772931d-4f24-479f-de80-b47a5d213745.jpg" />
+                <h2>Additional Benefits</h2>
+                <p>Easy IARC ratings in Epic Developer Portal, request no-cost localization for store pages and activate
+                    our Support-A-Creator affiliate network.</p>
+            </article>
+        </section>
+
+        <!-- FAQ section -->
+        <section class="faq-section">
+            <h1>Frequently Asked Questions</h1>
+
+            <div class="faq-list">
+                <article class="faq-item faq-open">
+                    <div class="faq-question">
+                        <h2>Why should I distribute my game on the Epic Games Store?</h2>
+                        <span class="faq-toggle">—</span>
+                    </div>
+                    <p class="faq-answer">
+                        The Epic Games Store has a global audience of over 230M+ users, a 88%/12% revenue split and
+                        additional no-cost services to help bring your game to market. For games built on Unreal Engine,
+                        engine royalty fees are waived for in-store purchases using Epic's payment processor. In-app
+                        purchases and products using their own payment processor are not exempt from engine royalties.
+                    </p>
+                </article>
+
+                <article class="faq-item">
+                    <div class="faq-question">
+                        <h2>My game is built with Unity or another engine, can I bring it to the Epic Games store?</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <div class="faq-question">
+                        <h2>What are the Epic Games Store self-service publishing tools?</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <div class="faq-question">
+                        <h2>What is the Epic Developer Portal?</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <div class="faq-question">
+                        <h2>What other developer tools does Epic offer?</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                </article>
+
+                <article class="faq-item">
+                    <div class="faq-question">
+                        <h2>How do I distribute games on the Epic Games Store?</h2>
+                        <span class="faq-toggle">+</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i> Twitter</a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i> YouTube</a>
+                </div>
+                <button class="btn-back-to-top"><i class="fa fa-chevron-up"></i> UP</button>
+            </div>
+
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Marketplaces</h4>
+                    <ul>
+                        <li><a href="#">Epic Games Store</a></li>
+                        <li><a href="#">Fab</a></li>
+                        <li><a href="#">Sketchfab</a></li>
+                        <li><a href="#">ArtStation</a></li>
+                        <li><a href="#">Store Refund Policy</a></li>
+                        <li><a href="#">Store EULA</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Tools</h4>
+                    <ul>
+                        <li><a href="#">Unreal Engine</a></li>
+                        <li><a href="#">UEFN</a></li>
+                        <li><a href="#">MetaHuman</a></li>
+                        <li><a href="#">Twinmotion</a></li>
+                        <li><a href="#">Megascans</a></li>
+                        <li><a href="#">RealityScan</a></li>
+                        <li><a href="#">Rad Game Tools</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Online Services</h4>
+                    <ul>
+                        <li><a href="#">Epic Online Services</a></li>
+                        <li><a href="#">Kids Web Service</a></li>
+                        <li><a href="#">Services Agreement</a></li>
+                        <li><a href="#">Acceptable Use Policy</a></li>
+                        <li><a href="#">Trust Statement</a></li>
+                        <li><a href="#">Subprocessor List</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Newsroom</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Students</a></li>
+                        <li><a href="#">UX Research</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Dev Community</a></li>
+                        <li><a href="#">MegaGrants</a></li>
+                        <li><a href="#">Support-A-Creator</a></li>
+                        <li><a href="#">Creator Agreement</a></li>
+                        <li><a href="#">Distribute on Epic Games</a></li>
+                        <li><a href="#">Unreal Engine Branding Guide</a></li>
+                        <li><a href="#">Fan Art Policy</a></li>
+                        <li><a href="#">Comuunity Rules</a></li>
+                        <li><a href="#">EU Digital Services Act</a></li>
+                        <li><a href="#">Epic Pro Support</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="horizontal-divider"></div>
+
+            <div class="copyright">
+                <p>
+                    © 2025, Epic Games, Inc. All rights reserved. Epic, Epic Games, the Epic Games logo, Fortnite, the
+                    Fortnite logo, Unreal, Unreal Engine, the Unreal Engine logo, Unreal Tournament, and the Unreal
+                    Tournament logo are trademarks or registered trademarks of Epic Games, Inc. in the United States of
+                    America and elsewhere. Other brands or product names are the trademarks of their respective owners.
+                    Our websites may contain links to other sites and resources provided by third parties. These links
+                    are provided for your convenience only. Epic Games has no control over the contents of those sites
+                    or resources, and accepts no responsibility for them or for any loss or damage that may arise from
+                    your use of them.
+                </p>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Store Refund Policy</a>
+                </div>
+                <div class="footer-logos">
+                    <a href="#"><img src="./static/img/logo-epic.svg" alt="Epic Logo"></a>
+                    <a href="#"><img src="./static/img/unreal-logo.svg" alt="Unreal Logo"></a>
+                </div>
+            </div>
         </div>
-        <p class="mt-4 text-[#a1a1a1] text-sm sm:text-base max-w-[90%] leading-relaxed">
-          The Epic Games Store has a global audience of over 230M+ users, a 88%/12% revenue split and additional no-cost services to help bring your game to market. For games built on Unreal Engine, engine royalty fees are waived for in-store purchases using Epic's payment processor. In-app purchases and products using their own payment processor are not exempt from engine royalties.
-        </p>
-      </article>
+    </footer>
 
-      <article class="py-6 flex justify-between items-center font-semibold text-white text-base sm:text-lg cursor-pointer">
-        <h2 class="max-w-[90%]">
-          My game is built with Unity or another engine, can I bring it to the Epic Games store?
-        </h2>
-        <span class="text-white text-xl select-none">+</span>
-      </article>
-
-      <article class="py-6 flex justify-between items-center font-semibold text-white text-base sm:text-lg cursor-pointer">
-        <h2 class="max-w-[90%]">
-          What are the Epic Games Store self-service publishing tools?
-        </h2>
-        <span class="text-white text-xl select-none">+</span>
-      </article>
-
-      <article class="py-6 flex justify-between items-center font-semibold text-white text-base sm:text-lg cursor-pointer">
-        <h2 class="max-w-[90%]">
-          What is the Epic Developer Portal?
-        </h2>
-        <span class="text-white text-xl select-none">+</span>
-      </article>
-
-      <article class="py-6 flex justify-between items-center font-semibold text-white text-base sm:text-lg cursor-pointer">
-        <h2 class="max-w-[90%]">
-          What other developer tools does Epic offer?
-        </h2>
-        <span class="text-white text-xl select-none">+</span>
-      </article>
-
-      <article class="py-6 flex justify-between items-center font-semibold text-white text-base sm:text-lg cursor-pointer">
-        <h2 class="max-w-[90%]">
-          How do I distribute games on the Epic Games Store?
-        </h2>
-        <span class="text-white text-xl select-none">+</span>
-      </article>
-    </section>
-  </main>
+    <script src="static/JS/distribute.js"></script>
 </body>
+
 </html>
